@@ -1,12 +1,74 @@
-# React + Vite
+# The Bionic Group Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive landing page for The Bionic Group - The Nonprofit Operating System.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Clean, professional design with blue accent colors
+- Responsive layout for all devices
+- Interactive CTAs (Get Started, Book Demo, Newsletter)
+- Social proof and testimonials
+- Ready for backend integration
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 18
+- Vite
+- CSS-in-JS styling
+- Git version control
+
+## Getting Started
+
+### Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+### Deployment
+
+This project is configured for deployment on Netlify:
+
+1. **Build Command**: `npm run build`
+2. **Publish Directory**: `dist`
+3. **Node Version**: 18+ (auto-detected)
+
+## Project Structure
+
+```
+src/
+├── components/
+│   └── LandingPageV0.jsx    # Main landing page component
+├── App.jsx                  # App entry point
+├── App.css                  # Global styles
+└── main.jsx                 # React entry point
+```
+
+## Customization
+
+The landing page includes placeholder functions for:
+- Form submissions (Get Started, Book Demo)
+- Newsletter signup
+- Analytics tracking
+
+These can be easily connected to your backend services.
+
+## Domain Setup
+
+To connect your domain `www.thebionicgroup.org`:
+
+1. Deploy to Netlify
+2. Go to Site Settings > Domain Management
+3. Add custom domain: `www.thebionicgroup.org`
+4. Follow DNS configuration instructions
+
+## License
+
+© The Bionic Group 2025
