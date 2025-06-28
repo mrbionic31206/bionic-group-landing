@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const LandingPageV0 = () => {
   const handleGetStarted = (e) => {
@@ -33,18 +34,19 @@ const LandingPageV0 = () => {
         top: 0,
         zIndex: 10,
       }}>
-        <a href="/" style={{ fontWeight: 700, fontSize: 28, letterSpacing: -1, color: '#1e3a8a', textDecoration: 'none' }}>
+        <Link to="/" style={{ fontWeight: 700, fontSize: 28, letterSpacing: -1, color: '#1e3a8a', textDecoration: 'none' }}>
           The Bionic Group
-        </a>
+        </Link>
         <nav style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
           <a href="#assistants" style={{ color: '#1e40af' }}>Assistants</a>
           <a href="#solutions" style={{ color: '#1e40af' }}>Solutions</a>
           <a href="#resources" style={{ color: '#1e40af' }}>Resources</a>
           <a href="#pricing" style={{ color: '#1e40af' }}>Pricing</a>
+          <Link to="/book-demo" style={{ color: '#2563eb', fontWeight: 600, textDecoration: 'underline' }}>Book a Demo</Link>
         </nav>
         <div style={{ display: 'flex', gap: '1rem' }}>
           <button onClick={handleGetStarted} style={{ background: 'linear-gradient(90deg, #2563eb 0%, #38bdf8 100%)', color: '#fff', padding: '0.6rem 1.2rem', borderRadius: 6, border: 'none', fontWeight: 600, cursor: 'pointer', boxShadow: '0 2px 8px #2563eb22' }}>Get Started</button>
-          <button onClick={handleBookDemo} style={{ border: '1px solid #2563eb', color: '#2563eb', padding: '0.6rem 1.2rem', borderRadius: 6, background: '#e0f2fe', fontWeight: 600, cursor: 'pointer' }}>Book a Demo</button>
+          <Link to="/book-demo" style={{ border: '1px solid #2563eb', color: '#2563eb', padding: '0.6rem 1.2rem', borderRadius: 6, background: '#e0f2fe', fontWeight: 600, cursor: 'pointer', textDecoration: 'none', display: 'inline-block' }}>Book a Demo</Link>
         </div>
       </header>
 
@@ -67,7 +69,7 @@ const LandingPageV0 = () => {
         </p>
         <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '3rem' }}>
           <button onClick={handleGetStarted} style={{ background: 'linear-gradient(90deg, #2563eb 0%, #38bdf8 100%)', color: '#fff', padding: '1rem 2.5rem', borderRadius: 8, border: 'none', fontWeight: 700, fontSize: '1.1rem', cursor: 'pointer', boxShadow: '0 4px 16px #2563eb22' }}>Get Started</button>
-          <button onClick={handleBookDemo} style={{ border: '2px solid #2563eb', color: '#2563eb', padding: '1rem 2.5rem', borderRadius: 8, background: '#e0f2fe', fontWeight: 700, fontSize: '1.1rem', cursor: 'pointer' }}>Book a Demo</button>
+          <Link to="/book-demo" style={{ border: '2px solid #2563eb', color: '#2563eb', padding: '1rem 2.5rem', borderRadius: 8, background: '#e0f2fe', fontWeight: 700, fontSize: '1.1rem', cursor: 'pointer', textDecoration: 'none', display: 'inline-block' }}>Book a Demo</Link>
         </div>
         <div style={{ background: '#1e3a8a', color: '#fff', borderRadius: 8, padding: '1rem 2rem', fontFamily: 'monospace', fontSize: '1.1rem', display: 'inline-block', opacity: 0.92 }}>
           npm create bionic-agent
