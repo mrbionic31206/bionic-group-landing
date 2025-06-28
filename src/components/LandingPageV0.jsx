@@ -132,7 +132,7 @@ const LandingPageV0 = () => {
           </p>
           <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '3rem' }}>
             <button onClick={handleGetStarted} style={{ background: 'linear-gradient(90deg, #2563eb 0%, #38bdf8 100%)', color: '#fff', padding: '1rem 2.5rem', borderRadius: 8, border: 'none', fontWeight: 700, fontSize: '1.1rem', cursor: 'pointer', boxShadow: '0 4px 16px #2563eb22' }}>Try It Free</button>
-            <button onClick={handleBookDemo} style={{ border: '2px solid #2563eb', color: '#2563eb', padding: '1rem 2.5rem', borderRadius: 8, background: '#fff', fontWeight: 700, fontSize: '1.1rem', cursor: 'pointer' }}>Talk to Sales</button>
+            <Link to="/book-demo" style={{ border: '2px solid #2563eb', color: '#2563eb', padding: '1rem 2.5rem', borderRadius: 8, background: '#fff', fontWeight: 700, fontSize: '1.1rem', cursor: 'pointer', textDecoration: 'none', display: 'inline-block' }}>Talk to Sales</Link>
           </div>
           
           {/* Newsletter Signup */}
