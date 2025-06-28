@@ -38,10 +38,9 @@ const LandingPageV0 = () => {
           The Bionic Group
         </Link>
         <nav style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
-          <a href="#assistants" style={{ color: '#1e40af' }}>Assistants</a>
-          <a href="#solutions" style={{ color: '#1e40af' }}>Solutions</a>
-          <a href="#resources" style={{ color: '#1e40af' }}>Resources</a>
-          <a href="#pricing" style={{ color: '#1e40af' }}>Pricing</a>
+          <Link to="/about" style={{ color: '#1e40af' }}>About</Link>
+          <Link to="/solutions" style={{ color: '#1e40af' }}>Solutions</Link>
+          <Link to="/contact" style={{ color: '#1e40af' }}>Contact</Link>
           <Link to="/book-demo" style={{ color: '#2563eb', fontWeight: 600, textDecoration: 'underline' }}>Book a Demo</Link>
         </nav>
         <div style={{ display: 'flex', gap: '1rem' }}>
@@ -175,7 +174,11 @@ const LandingPageV0 = () => {
           </div>
           <div>
             <div style={{ fontWeight: 600, marginBottom: 8 }}>Company</div>
-            <div style={{ fontSize: 14, opacity: 0.8 }}>About, Events, Careers</div>
+            <div style={{ fontSize: 14, opacity: 0.8 }}>
+              <Link to="/about" style={{ color: '#fff', textDecoration: 'none', opacity: 0.8 }}>About</Link>, 
+              <Link to="/contact" style={{ color: '#fff', textDecoration: 'none', opacity: 0.8 }}> Contact</Link>, 
+              Events, Careers
+            </div>
           </div>
         </div>
       </footer>
