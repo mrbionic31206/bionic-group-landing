@@ -1,8 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Logo from './Logo';
 
 const Header = () => {
+  const location = useLocation();
+  const isHome = location.pathname === '/';
+
   const handleGetStarted = (e) => {
     e.preventDefault();
     // TODO: Add form submission logic
@@ -21,22 +24,15 @@ const Header = () => {
       top: 0,
       zIndex: 10,
     }}>
-      {/* Logo/Home Link */}
+      {/* Left: Home/Brand */}
       <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-        <Logo size="medium" />
-        <span style={{ 
-          color: '#1e40af', 
-          fontSize: '0.9rem', 
-          fontWeight: 500,
-          display: 'flex',
-          alignItems: 'center',
-          gap: '0.25rem'
-        }}>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+        {isHome ? (
+          <span style={{ color: '#1e40af', fontWeight: 700, fontSize: 24, letterSpacing: -1 }}>The Bionic Group</span>
+        ) : (
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="#1e40af">
             <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
           </svg>
-          Home
-        </span>
+        )}
       </Link>
       
       {/* Navigation */}
