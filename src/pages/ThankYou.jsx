@@ -4,31 +4,31 @@ import { Link } from 'react-router-dom';
 const ThankYou = () => {
   return (
     <div style={{ minHeight: '100vh', background: '#F5F7FA', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
-      <div style={{ textAlign: 'center', background: '#fff', borderRadius: 16, padding: '3rem 2rem', boxShadow: '0 8px 32px #2563eb11', maxWidth: 500, width: '100%' }}>
+      <div style={{ textAlign: 'center', background: '#fff', borderRadius: 16, padding: '3rem 2rem', boxShadow: '0 8px 32px #2563eb11', maxWidth: '50%', width: '100%', minWidth: 400 }}>
         <div style={{ marginBottom: '2rem' }}>
           <div style={{ fontWeight: 700, fontSize: 28, letterSpacing: -1, color: '#1e3a8a', marginBottom: '0.5rem' }}>
             The Bionic Group
           </div>
           <div style={{ fontSize: '1rem', color: '#64748b' }}>
-            AI-Powered Nonprofit Operating System
+            The Nonprofit Operating System
           </div>
         </div>
         
-        <div style={{ fontSize: '3rem', marginBottom: '1.5rem' }}>🎉</div>
+        <div style={{ fontSize: '3rem', marginBottom: '1.5rem', color: '#8B4513' }}>🤝</div>
         <h1 style={{ fontSize: '2.2rem', fontWeight: 700, marginBottom: '1rem', color: '#1e3a8a' }}>
-          Thanks for booking a demo!
+          Thanks!
         </h1>
         <p style={{ fontSize: '1.2rem', color: '#334155', marginBottom: '2rem', lineHeight: 1.6 }}>
-          We're excited to show you how our AI tools can transform your nonprofit operations. You'll receive a confirmation email shortly with meeting details.
+          Hey there, I'm Rahim with The Bionic Group, I'm excited to show you how the team and I will transform your Nonprofit Organization. Meeting details have been emailed.
         </p>
         
         <div style={{ background: '#e0f2fe', borderRadius: 12, padding: '1.5rem', marginBottom: '2rem' }}>
-          <div style={{ fontWeight: 600, color: '#2563eb', marginBottom: '0.5rem' }}>What to expect:</div>
+          <div style={{ fontWeight: 600, color: '#2563eb', marginBottom: '0.5rem' }}>What To Expect:</div>
           <ul style={{ textAlign: 'left', color: '#334155', fontSize: '1rem', lineHeight: 1.6, margin: 0, paddingLeft: '1.5rem' }}>
-            <li>Personalized demo of GrantBot, OpsAI, and SupportGPT</li>
-            <li>Real examples from similar nonprofits</li>
-            <li>Implementation roadmap for your organization</li>
-            <li>Q&A session with our team</li>
+            <li>Personalized Demo of Grant, Sydney, and Eli</li>
+            <li>How it works & Implementation roadmap for your Organization</li>
+            <li>Real Examples. Similar Nonprofits.</li>
+            <li>The Nonprofit Operating System</li>
           </ul>
         </div>
         

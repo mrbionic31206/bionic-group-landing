@@ -12,7 +12,7 @@ const BookDemo = () => {
             The Bionic Group
           </div>
           <div style={{ fontSize: '1.1rem', color: '#334155', lineHeight: 1.6 }}>
-            AI-Powered Nonprofit Operating System
+            The Nonprofit Operating System
           </div>
         </div>
       </div>
@@ -22,7 +22,7 @@ const BookDemo = () => {
           📅 Select a time below to book your demo
         </div>
         <div style={{ marginBottom: 16, fontSize: '1rem', color: '#64748b', textAlign: 'center', maxWidth: 500 }}>
-          Choose a convenient time slot for your personalized demo. We'll show you how our AI tools can transform your nonprofit operations.
+          Choose a convenient time slot for your personalized demo. We'll show you how The Bionic Group can transform your Nonprofit.
         </div>
         <iframe 
           src='https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Dkio9w7H__t-quKYOqT9ZYpHkUI8H_H8fPafMjRIw5pDP6VSjIqigNr-4ThfnuoYn7zyQm118?gv=true' 
@@ -57,7 +57,7 @@ const BookDemo = () => {
               e.target.style.boxShadow = '0 4px 16px #2563eb22';
             }}
           >
-            ✅ I've booked my slot – Continue
+            📅 Booked
           </button>
         </div>
       </div>
