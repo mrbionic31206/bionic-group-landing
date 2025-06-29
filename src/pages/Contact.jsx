@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Header from '../components/Header';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -27,28 +28,7 @@ const Contact = () => {
   return (
     <div style={{ fontFamily: 'Inter, Segoe UI, Arial, sans-serif' }}>
       {/* Header */}
-      <header style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        padding: '1.5rem 2rem',
-        borderBottom: '1px solid #e0e7ef',
-        background: 'linear-gradient(90deg, #e3f0ff 0%, #f1f5f9 100%)',
-        position: 'sticky',
-        top: 0,
-        zIndex: 10,
-      }}>
-        <Link to="/" style={{ fontWeight: 700, fontSize: 28, letterSpacing: -1, color: '#1e3a8a', textDecoration: 'none' }}>
-          The Bionic Group
-        </Link>
-        <nav style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
-          <Link to="/" style={{ color: '#1e40af' }}>Home</Link>
-          <Link to="/about" style={{ color: '#1e40af' }}>About</Link>
-          <Link to="/solutions" style={{ color: '#1e40af' }}>Solutions</Link>
-          <Link to="/contact" style={{ color: '#2563eb', fontWeight: 600, textDecoration: 'underline' }}>Contact</Link>
-          <Link to="/book-demo" style={{ color: '#2563eb', fontWeight: 600, textDecoration: 'underline' }}>Book a Demo</Link>
-        </nav>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section style={{

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Logo from './Logo';
+import Header from './Header';
 
 const LandingPageV0 = () => {
   const handleGetStarted = (e) => {
@@ -23,31 +25,7 @@ const LandingPageV0 = () => {
   return (
     <div style={{ fontFamily: 'Inter, Segoe UI, Arial, sans-serif' }}>
       {/* Header */}
-      <header style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        padding: '1.5rem 2rem',
-        borderBottom: '1px solid #e0e7ef',
-        background: 'linear-gradient(90deg, #e3f0ff 0%, #f1f5f9 100%)',
-        position: 'sticky',
-        top: 0,
-        zIndex: 10,
-      }}>
-        <Link to="/" style={{ fontWeight: 700, fontSize: 28, letterSpacing: -1, color: '#1e3a8a', textDecoration: 'none' }}>
-          The Bionic Group
-        </Link>
-        <nav style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
-          <Link to="/about" style={{ color: '#1e40af' }}>About</Link>
-          <Link to="/solutions" style={{ color: '#1e40af' }}>Solutions</Link>
-          <Link to="/contact" style={{ color: '#1e40af' }}>Contact</Link>
-          <Link to="/book-demo" style={{ color: '#2563eb', fontWeight: 600, textDecoration: 'underline' }}>Book a Demo</Link>
-        </nav>
-        <div style={{ display: 'flex', gap: '1rem' }}>
-          <button onClick={handleGetStarted} style={{ background: 'linear-gradient(90deg, #2563eb 0%, #38bdf8 100%)', color: '#fff', padding: '0.6rem 1.2rem', borderRadius: 6, border: 'none', fontWeight: 600, cursor: 'pointer', boxShadow: '0 2px 8px #2563eb22' }}>Get Started</button>
-          <Link to="/book-demo" style={{ border: '1px solid #2563eb', color: '#2563eb', padding: '0.6rem 1.2rem', borderRadius: 6, background: '#e0f2fe', fontWeight: 600, cursor: 'pointer', textDecoration: 'none', display: 'inline-block' }}>Book a Demo</Link>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section style={{
@@ -68,10 +46,10 @@ const LandingPageV0 = () => {
         </p>
         <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '3rem' }}>
           <button onClick={handleGetStarted} style={{ background: 'linear-gradient(90deg, #2563eb 0%, #38bdf8 100%)', color: '#fff', padding: '1rem 2.5rem', borderRadius: 8, border: 'none', fontWeight: 700, fontSize: '1.1rem', cursor: 'pointer', boxShadow: '0 4px 16px #2563eb22' }}>Get Started</button>
-          <Link to="/book-demo" style={{ border: '2px solid #2563eb', color: '#2563eb', padding: '1rem 2.5rem', borderRadius: 8, background: '#e0f2fe', fontWeight: 700, fontSize: '1.1rem', cursor: 'pointer', textDecoration: 'none', display: 'inline-block' }}>Book a Demo</Link>
+          <Link to="/book-demo" style={{ border: '2px solid #2563eb', color: '#2563eb', padding: '1rem 2.5rem', borderRadius: 8, background: '#e0f2fe', fontWeight: 700, fontSize: '1.1rem', cursor: 'pointer', textDecoration: 'none', display: 'inline-block' }}>Book A Demo</Link>
         </div>
         <div style={{ background: '#1e3a8a', color: '#fff', borderRadius: 8, padding: '1rem 2rem', fontFamily: 'monospace', fontSize: '1.1rem', display: 'inline-block', opacity: 0.92 }}>
-          npm create bionic-agent
+          You Empower. We Automate
         </div>
       </section>
 
@@ -161,8 +139,8 @@ const LandingPageV0 = () => {
       <footer style={{ background: '#1e3a8a', color: '#fff', padding: '3rem 2rem 2rem 2rem' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: '2rem', justifyContent: 'space-between' }}>
           <div>
-            <div style={{ fontWeight: 700, fontSize: 24, marginBottom: 12 }}>The Bionic Group</div>
-            <div style={{ fontSize: 14, opacity: 0.8 }}>© The Bionic Group 2025</div>
+            <Logo variant="white" size="medium" />
+            <div style={{ fontSize: 14, opacity: 0.8, marginTop: 12 }}>© The Bionic Group 2025</div>
           </div>
           <div>
             <div style={{ fontWeight: 600, marginBottom: 8 }}>Products</div>
