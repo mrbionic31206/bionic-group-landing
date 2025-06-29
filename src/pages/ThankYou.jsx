@@ -19,14 +19,15 @@ const ThankYou = () => {
           Thanks!
         </h1>
         <p style={{ fontSize: '1.2rem', color: '#334155', marginBottom: '2rem', lineHeight: 1.6 }}>
-          Hey there, I'm Rahim with The Bionic Group, I'm excited to show you how the team and I will transform your Nonprofit Organization. Meeting details have been emailed.
+          We're excited to show you Bionic! Meeting details have been emailed.
         </p>
         
         <div style={{ background: '#e0f2fe', borderRadius: 12, padding: '1.5rem', marginBottom: '2rem' }}>
           <div style={{ fontWeight: 600, color: '#2563eb', marginBottom: '0.5rem' }}>What To Expect:</div>
           <ul style={{ textAlign: 'left', color: '#334155', fontSize: '1rem', lineHeight: 1.6, margin: 0, paddingLeft: '1.5rem' }}>
             <li>Personalized Demo of Grant, Sydney, and Eli</li>
-            <li>How it works & Implementation roadmap for your Organization</li>
+            <li>How it works</li>
+            <li>Implementation roadmap for your Organization</li>
             <li>Real Examples. Similar Nonprofits.</li>
             <li>The Nonprofit Operating System</li>
           </ul>
@@ -37,8 +38,7 @@ const ThankYou = () => {
           style={{ 
             color: '#2563eb', 
             textDecoration: 'none', 
-            fontSize: '1.1rem', 
-            fontWeight: 600,
+            fontSize: '2rem',
             padding: '0.8rem 1.5rem',
             border: '2px solid #2563eb',
             borderRadius: 8,
@@ -54,7 +54,7 @@ const ThankYou = () => {
             e.target.style.color = '#2563eb';
           }}
         >
-          ← Back to Home
+          🏠
         </Link>
       </div>
     </div>
