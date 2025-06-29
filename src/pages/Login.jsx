@@ -3,9 +3,9 @@ import { supabase } from '../supabaseClient';
 import { useNavigate } from 'react-router-dom';
 
 const socialProviders = [
-  { name: 'Google', key: 'google', color: '#fff', textColor: '#222' },
-  { name: 'Facebook', key: 'facebook', color: '#f5f5f5', textColor: '#222' },
-  { name: 'LinkedIn', key: 'linkedin', color: '#e5e5e5', textColor: '#222' },
+  { name: 'Google', key: 'google' },
+  { name: 'Facebook', key: 'facebook' },
+  { name: 'LinkedIn', key: 'linkedin' },
 ];
 
 export default function Login() {
@@ -36,14 +36,14 @@ export default function Login() {
   return (
     <div style={{ minHeight: '100vh', background: '#f5f5f5', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 24 }}>
       <div style={{ display: 'flex', background: '#fff', borderRadius: 16, boxShadow: '0 8px 32px #2221', maxWidth: 900, width: '100%', overflow: 'hidden' }}>
-        {/* Left: Logo and Art */}
+        {/* Left: Branding */}
         <div style={{ background: '#111', color: '#fff', flex: 1, minWidth: 320, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: 32 }}>
           <div style={{ fontWeight: 700, fontSize: 32, lineHeight: 1.1, marginBottom: 32, textAlign: 'left', width: '100%' }}>
             <span style={{ display: 'block' }}>The</span>
             <span style={{ display: 'block' }}>Bionic</span>
             <span style={{ display: 'block' }}>Group</span>
           </div>
-          <img src="/logo-primary.png" alt="Bionic Logo" style={{ width: 220, height: 220, objectFit: 'contain', borderRadius: 12, background: '#fff', padding: 8 }} />
+          <img src="/logo-primary.png" alt="Bionic Logo" style={{ width: 180, height: 180, objectFit: 'contain', borderRadius: 12, background: '#fff', padding: 8 }} />
         </div>
         {/* Right: Form */}
         <div style={{ flex: 1.2, minWidth: 320, padding: 48, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
@@ -51,7 +51,7 @@ export default function Login() {
           <form onSubmit={handleLogin} style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             <input
               type="email"
-              placeholder="email.email@mail.com"
+              placeholder="email@email.com"
               value={email}
               onChange={e => setEmail(e.target.value)}
               required
@@ -72,11 +72,11 @@ export default function Login() {
           </form>
           <div style={{ margin: '32px 0', textAlign: 'center', color: '#888', fontWeight: 500 }}>or</div>
           <div style={{ display: 'flex', gap: 16, justifyContent: 'center', marginBottom: 24 }}>
-            {socialProviders.map(({ name, key, color, textColor }) => (
+            {socialProviders.map(({ name, key }) => (
               <button
                 key={key}
                 onClick={() => handleSocial(key)}
-                style={{ background: color, color: textColor, border: '1px solid #ddd', borderRadius: 8, padding: '12px 24px', fontWeight: 600, fontSize: 16, minWidth: 120, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                style={{ background: '#f5f5f5', color: '#222', border: '1px solid #ddd', borderRadius: 8, padding: '12px 24px', fontWeight: 600, fontSize: 16, minWidth: 120, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
               >
                 {name}
               </button>

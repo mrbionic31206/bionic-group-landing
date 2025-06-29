@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import BookDemo from './pages/BookDemo';
 import ThankYou from './pages/ThankYou';
 import Login from './pages/Login';
+import GetStarted from './pages/GetStarted';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/book-demo" element={<BookDemo />} />
         <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/get-started" element={<GetStarted />} />
       </Routes>
     </Router>
   );
