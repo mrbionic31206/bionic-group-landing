@@ -9,6 +9,12 @@ import BookDemo from './pages/BookDemo';
 import ThankYou from './pages/ThankYou';
 import Login from './pages/Login';
 import GetStarted from './pages/GetStarted';
+import Dashboard from './pages/Dashboard';
+import Profile from './pages/Profile';
+import Pricing from './pages/Pricing';
+import Resources from './pages/Resources';
+import SignUp from './pages/SignUp';
+import NotFound from './pages/NotFound';
 
 export default function App() {
   return (
@@ -22,6 +28,12 @@ export default function App() {
         <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/login" element={<Login />} />
         <Route path="/get-started" element={<GetStarted />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/resources" element={<Resources />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

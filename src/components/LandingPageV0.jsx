@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
 import Header from './Header';
+import Footer from './Footer';
+import InteractiveSurvey from './InteractiveSurvey';
 
 const LandingPageV0 = () => {
   const handleGetStarted = (e) => {
@@ -50,6 +52,21 @@ const LandingPageV0 = () => {
         </div>
         <div style={{ background: '#1e3a8a', color: '#fff', borderRadius: 8, padding: '1rem 2rem', fontFamily: 'monospace', fontSize: '1.1rem', display: 'inline-block', opacity: 0.92 }}>
           You Empower. We Automate
+        </div>
+      </section>
+
+      {/* Interactive Survey Section */}
+      <section style={{ padding: '5rem 2rem', background: '#f8fafc' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <h2 style={{ fontSize: '2.5rem', fontWeight: 700, color: '#1e3a8a', marginBottom: '1rem' }}>
+              Find Your Perfect AI Solution
+            </h2>
+            <p style={{ fontSize: '1.2rem', color: '#334155', maxWidth: 600, margin: '0 auto', lineHeight: 1.6 }}>
+              Take our quick 10-question survey to get personalized recommendations for your nonprofit.
+            </p>
+          </div>
+          <InteractiveSurvey />
         </div>
       </section>
 
@@ -136,30 +153,7 @@ const LandingPageV0 = () => {
       </section>
 
       {/* Footer */}
-      <footer style={{ background: '#1e3a8a', color: '#fff', padding: '3rem 2rem 2rem 2rem' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: '2rem', justifyContent: 'space-between' }}>
-          <div>
-            <Logo variant="white" size="medium" />
-            <div style={{ fontSize: 14, opacity: 0.8, marginTop: 12 }}>© The Bionic Group 2025</div>
-          </div>
-          <div>
-            <div style={{ fontWeight: 600, marginBottom: 8 }}>Products</div>
-            <div style={{ fontSize: 14, opacity: 0.8 }}>GrantBot, OpsAI, SupportGPT</div>
-          </div>
-          <div>
-            <div style={{ fontWeight: 600, marginBottom: 8 }}>Resources</div>
-            <div style={{ fontSize: 14, opacity: 0.8 }}>Docs, Templates, Case Studies</div>
-          </div>
-          <div>
-            <div style={{ fontWeight: 600, marginBottom: 8 }}>Company</div>
-            <div style={{ fontSize: 14, opacity: 0.8 }}>
-              <Link to="/about" style={{ color: '#fff', textDecoration: 'none', opacity: 0.8 }}>About</Link>, 
-              <Link to="/contact" style={{ color: '#fff', textDecoration: 'none', opacity: 0.8 }}> Contact</Link>, 
-              Events, Careers
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
